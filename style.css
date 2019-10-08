@@ -1,0 +1,210 @@
+    #banner {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+        width: 120px;
+        height: 600px;
+        position: absolute;
+        cursor: pointer;
+        overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        margin: auto;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 1px solid #000;
+        opacity: 1;
+        background-color: #fff;
+        opacity: 0;
+    }
+    
+    .copy {
+        font-size: 28px;
+        /*font-weight:bold;*/
+        letter-spacing: 0px;
+        font-weight: 500;
+    }
+    
+    #banner img,
+    #banner div {
+        border: none;
+        position: absolute;
+        opacity: 0;
+        font-family: HelveticaLight, Helvetica, Arial, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Segoe UI, InfoText, Calibiri, Arial Unicode MS;
+        font-weight: normal;
+        /*font-family: "Arial", sans-serif;
+        font-weight: bold;*/
+        text-align: right;
+    }
+    
+    #banner #BackgroundImage {
+        /*background-image: url('assets/frame1.jpg');*/
+        background-image: url('assets/backgrounds.jpg');
+        border: none;
+        opacity: 1;
+        width: 240px;
+        height: 600px;
+        right: 0px;
+    }
+
+    #banner #frameOne {
+        border: none;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        right: 0px;
+    }
+
+    #banner #frameOne #textOne {
+        background-image: url('assets/text_line_full.png');
+        border: none;
+        opacity: 1;
+        width: 100%;
+        height: 120px;
+        right: 0px;
+        top: 10px;
+        clip: rect(70px,120px, 120px, 0px);  /* top right bottom left*/
+    }
+
+    /* product animation v1 */
+    #banner #frameOne #catAnimationOne, #banner #frameOne #catAnimationOneB {
+        top: 105px;
+        left: 7px;
+        width: 140px;
+        height: 270px;
+        -ms-transform: scale(1.1,1.1); /* IE 9 */
+    	-webkit-transform: scale(1.1,1.1); /* Safari */
+    	transform: scale(1.1,1.1);
+		background: url(assets/cat_animation1d.png) left center; 
+		background-position: 0px;
+		-webkit-animation: play 3.8s steps(24) 1; /* Chrome, Safari, Opera */ 
+		animation: play 3.8s steps(24) 1;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        z-index: 200;
+    }
+   
+    #banner #frameOne #catAnimationOneB {
+        animation-delay: 14.5s;
+    }
+
+	@-webkit-keyframes play {
+		from { background-position: 0px; }
+		to { background-position: -2880px; }
+	}
+
+	@-moz-keyframes play {
+		from { background-position: 0px; }
+		to { background-position: -2880px; }
+	}
+
+	@keyframes play {
+		from { background-position: 0px; }
+		to { background-position: -2880px; }
+	}
+
+
+ /*  animate food*/
+ #banner #frameOne #productAnimationOne, #banner #frameOne #productAnimationOneB {
+        left: 5px;
+        width: 100%;
+        height: 600px;
+        top:0px;
+        -ms-transform: scale(1,1); /* IE 9 */
+    	-webkit-transform: scale(1,1); /* Safari */
+    	transform: scale(1,1);
+		background: url(assets/product_animation1b.png) left center; 
+		background-position: 0px;
+		-webkit-animation: playProduct 2.5s steps(19) 1; /* Chrome, Safari, Opera */ 
+		animation: playProduct 2.5s steps(19) 1;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+
+   #banner #frameOne #productAnimationOneB {
+        animation-delay: 13.5s;
+    }
+
+	@-webkit-keyframes playProduct {
+		from { background-position: 0px; }
+		to { background-position: -2280px; }
+	}
+
+	@-moz-keyframes playProduct {
+		from { background-position: 0px; }
+		to { background-position: -2280px; }
+	}
+
+	@keyframes playProduct {
+		from { background-position: 0px; }
+		to { background-position: -2280px; }
+	}
+
+    #banner #frameTwo {
+        border: none;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        right: 0px;
+    }
+
+    #banner #frameTwo #textTwo {
+        background-image: url('assets/text_line_full.png');
+        border: none;
+        opacity: 1;
+        width: 100%;
+        height: 120px;
+        right: 0px;
+        top:55px;
+        clip: rect(0px, 120px, 65px, 0px);  /* top right bottom left*/
+    }
+
+    #banner #endFrame {
+        border: none;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        right: 0px;
+    }
+
+    #banner #endFrame #endFrameBackground {
+        background-image: url('assets/backgrounds.jpg');
+        border: none;
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+    }
+    
+    #banner #newLogo {
+        opacity: 1;
+        width: 46px;
+        height: 32px;
+        top: 0px;
+        right: 1px;
+    }
+
+    #banner #cta {
+        opacity: 1;
+        width: 86px;
+        height: 40px;
+        top: 340px;
+        left: 15px;
+    }
+
+    #banner #bgexit {
+        opacity: 1;
+        cursor: pointer;
+        z-index: 2101;
+        width: 100%;
+        height: 100%;
+    }
